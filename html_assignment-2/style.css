@@ -1,0 +1,23 @@
+#parent {
+    border: 1p solid black;
+    box-sizing: border-box;
+    display: flex;
+    width: 400px;
+    height: 700px;
+}
+#div1 {
+    background-color: red;
+    border: 1p solid black;
+    order: 1;
+    width: 1;
+}
+#div2 {
+    background-color: green;
+    border: 1p solid black;
+    order: 2;
+}
+#div3 {
+    background-color: blue;
+    border: 1p solid black;
+    order: 3;
+}

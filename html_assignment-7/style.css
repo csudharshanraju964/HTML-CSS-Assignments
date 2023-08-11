@@ -1,0 +1,18 @@
+#div1{
+    width: 50%;
+    float: left;
+}
+#div2{
+    float: none;
+    width: auto;
+}
+#div3{
+    width: 50%;
+    float: left;
+}
+#div4{
+    float: none;
+    width: auto;
+    text-align: center;
+    font-size: medium;
+}

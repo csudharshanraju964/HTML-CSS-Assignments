@@ -1,0 +1,40 @@
+body{
+    background-color:lightgray;
+}
+.card{
+    display: flex;
+    margin: 30px 50px;
+}
+.green{
+    height:300px;
+    width:330px;
+    position: relative;
+    background-color:lightgreen;
+    margin-top: 20px;
+}
+.white{
+    height:250px;
+    width:300px;
+    padding-top: 50px;
+    padding-left: 50px;
+    background-color: white;
+    margin-top: 20px;
+    justify-content: center;
+}
+#img1{
+    position: relative;
+    bottom: 30px;
+    right: 12px;
+}
+#img2{
+    position: relative;
+    right: 15px;
+}
+button{
+    border-radius: 50px;
+    border: none;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: lightgreen;
+    cursor: pointer;
+}

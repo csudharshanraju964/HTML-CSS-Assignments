@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        const listItem = document.querySelector("#todo-holder")
+        const todoInput = document.querySelector("#todo-input")
+        const todoBtn = document.querySelector("#add-todo")
+        let todoList = []
+        for(let i=0;i<window.localStorage.length;i++){
+            todoList.push(window.localStorage.getItem(`${i}`))
+        }
+        todoBtn.addEventListener("click", addtodo)
+        let k = 0
+        function addtodo(){
+            todoList.push(todoInput.value)
+            window.localStorage.setItem(`${k++}`,`${todoInput.value}`)
+            let todoTemplate = `<li>${todoInput.value}</li>`
+            listItem.innerHTML += todoTemplate
+            todoInput.value = ""
+        }
+        window.addEventListener("load",listTodo)
+        function listTodo(){
+        for(let todo of todoList){
+            let todoTemplate = `<li>${todo}</li>`
+            listItem.innerHTML += todoTemplate
+        }
+}
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="todo-input" placeholder="Enter the list">
+        <input type="button" id="add-todo" value = "add-todo">
+        <ul id="todo-holder">
+        </ul>
+    </div>
+</body>
+</html>

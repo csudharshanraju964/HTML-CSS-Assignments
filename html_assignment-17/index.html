@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <h1>Feedback Form</h1>
+        <label for="name">Name :</label><br>
+        <input type="text" id="name" name="name" minlength="3" maxlength="50" required><br>
+        <label for="portfolio">Portfolio :</label><br>
+        <input type="url" id="portfolio" name="portfolio"><br>
+        <label for="favColor">Favourite color :</label><br>
+        <input type="color" id="favColor" name="favColor"><br>
+        <label for="likeness">Range slider :</label><br>
+        <input type="range" id="likeness" minvalue="1" maxvalue="100" value="1" name="range slider"><br>
+        <button id="button">Submit</button>
+        <p>Car brand</p>
+        <input list="brand">
+        <datalist id="brand">
+            <option value="Benz"></option>
+            <option value="BMW"></option>
+            <option value="Mercedez"></option>
+        </datalist>
+        
+    </form>
+</body>
+</html>

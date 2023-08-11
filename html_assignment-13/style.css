@@ -1,0 +1,10 @@
+div {
+    background-color: darkseagreen;
+    border: 1px solid black;
+    padding:5px;
+    margin-bottom: 5px;
+}
+header {
+    text-align: center;
+    font-size: large;
+}
